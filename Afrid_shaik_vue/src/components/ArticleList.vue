@@ -33,7 +33,7 @@ export default {
     },
     apiUrl: {
       type: String,
-      default: 'http://localhost:3000/api'
+      default: '/api'
     }
   },
   emits: ['delete', 'edit', 'save'],

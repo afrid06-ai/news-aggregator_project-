@@ -92,7 +92,7 @@ export default {
       editingArticle: null,
       loading: false,
       error: null,
-      apiUrl: 'http://localhost:3000/api',
+      apiUrl: '/api',
       categories: ['technology', 'business', 'sports', 'science', 'health', 'entertainment', 'general'],
       searchNewsAPI: false
     }

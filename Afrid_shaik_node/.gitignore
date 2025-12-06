@@ -5,3 +5,10 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# EC2 deployment files
+Procfile
+ec2-deploy.sh
+ec2-nginx.conf
+ec2-setup.sh
+ecosystem.config.js
