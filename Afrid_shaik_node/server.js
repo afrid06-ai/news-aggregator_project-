@@ -18,7 +18,10 @@ mongoose.connect(MONGODB_URI, {
   useUnifiedTopology: true,
 })
 .then(() => console.log('MongoDB connected successfully'))
-.catch(err => console.error('MongoDB connection error:', err));
+.catch(err => {
+  console.error('MongoDB connection error:', err);
+  console.log('Server will continue running, but database operations may fail');
+});
 
 const articleSchema = new mongoose.Schema({
   title: { type: String, required: true },
@@ -187,7 +190,9 @@ app.get('/', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
+  console.log(`Server listening on 0.0.0.0:${PORT}`);
   console.log(`NewsAPI Key: ${NEWS_API_KEY === 'YOUR_NEWS_API_KEY_HERE' ? 'NOT SET - Please set NEWS_API_KEY environment variable' : 'SET'}`);
 });
