@@ -1,8 +1,13 @@
 <template>
   <div class="mainWrapper">
     <header class="headerSection">
-      <h1>News Aggregator</h1>
-      <p>Discover, save, and organize news articles from around the world</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <div>
+          <h1>News Aggregator</h1>
+          <p>Discover, save, and organize news articles from around the world</p>
+        </div>
+        <a href="/portfolio" style="padding: 10px 20px; background: #4CAF50; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">View Portfolio</a>
+      </div>
     </header>
     
     <div v-if="error" class="errorBox">

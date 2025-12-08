@@ -1,14 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Project Management App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- Vue CLI will automatically inject the built JS and CSS bundles here -->
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <title>Afrid • Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+
+
+    <header class="site-header">
+      <h1>AFRID • PORTFOLIO</h1>
+    
+    
+      <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    
+    
+      <nav id="site-nav" class="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="about">
+      <div class="section-header">ABOUT</div>
+      <div class="about-box">
+        <div class="about-grid">
+          <div class="profile-content">
+            <p>
+              I am a Graduate Computer Science student at the University of New Haven (2024–2026), passionate about
+              solving real-world problems through technology. With a strong foundation in Data Structures, Algorithms,
+              and Software Engineering, I have developed expertise in designing efficient systems and applying modern
+              development practices.
+            </p>
+            <p>
+              Over the past few years, I have gained hands-on experience across data science, machine learning
+              engineering, and software testing through multiple internships. My work includes building
+              Retrieval-Augmented Generation (RAG) systems, deploying Generative AI solutions, and developing automation
+              frameworks that improve quality and scalability in production environments.
+            </p>
+        </div>
+          <div class="profile-image">
+            <img src="portrait_640.png" alt="Profile portrait of Afrid" />
+          </div>
+        </div>
+      </div>
+      <section id="education">
+        <div class="section-header">Education</div>
+        <div class="education-box">
+          <div class="education-grid">
+            <article class="edu-card">
+              <h3>University of New Haven — Master of Science in Computer Science</h3>
+              <p>Aug 2024 – May 2026</p>
+              <p>Focus on advanced computing, data structures, algorithms, and AI-driven solutions.</p>
+            </article>
+      
+            <article class="edu-card">
+              <h3>SRM Institute of Science and Technology — B.Tech in Software Engineering</h3>
+              <p>2019 – 2023 • CGPA: 8.83 / 10</p>
+              <p>Coursework: Software Engineering, Database Systems, Machine Learning, Cloud Computing, Web Development.</p>    
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="section-header">EXPERIENCE</div>
+      
+        <div class="experience-box">
+          <div class="exp-card left">
+            <h3>Rubixe — Junior Data Scientist (Remote)</h3>
+            <p><strong>July 2023 — July 2024</strong></p>
+            <ul>
+              <li>Designed and deployed <strong>Generative AI</strong> enterprise search.</li>
+              <li>Built a <strong>RAG</strong> system with citations; Docker + FastAPI.</li>
+            </ul>
+          </div>
+      
+          <div class="right-column">
+            <div class="exp-card">
+              <h3>Tekion — SDET Intern (On-site: Chennai)</h3>
+              <p><strong>Jan 2023 — July 2023</strong></p>
+              <ul>
+                <li>Selenium (Java) + TestNG automation; Git/GitLab CI.</li>
+              </ul>
+            </div>
+      
+            <div class="exp-card">
+              <h3>HighRadius — ML Engineer Intern (Remote)</h3>
+              <p><strong>Feb 2022 — Apr 2022</strong></p>
+              <ul>
+                <li>AI invoice prototype achieved <strong>84% accuracy</strong>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blogs">
+        <div class="section-header">BLOGS</div>
+      
+        <div class="blogs-box">
+          <div class="blog-card">
+            <h3>The Concept of “Lovable AI”</h3>
+            <p><strong>Aug 2024</strong></p>
+            <ul>
+              <li><strong>Utility + Delight</strong> — AI should not only solve problems but also create enjoyable experiences.</li>
+              <li><strong>Micro-interactions</strong> — Empathetic responses, contextual awareness, and adaptive tone build trust.</li>
+              <li><strong>Transparency & Trust</strong> — Clearly communicate limitations while being helpful.</li>
+              <li><strong>Future Outlook</strong> — RAG, multi-agent systems, and personalization will shape user expectations.</li>
+            </ul>
+          </div>
+      
+          <div class="blog-card">
+            <h3>AI Study Assistants in Education</h3>
+            <p><strong>Jun 2024</strong></p>
+            <ul>
+              <li>
+                <strong>AI-powered flashcards and quizzes enhance retention</strong> — 
+                Adaptive learning platforms generate practice questions automatically from textbooks, lecture notes, or recorded sessions. 
+                Instead of static flashcards, AI tailors the difficulty of questions to each learner’s progress, spacing out reviews with techniques 
+                like <em>spaced repetition</em>. This ensures that students spend more time reinforcing weaker concepts, leading to higher knowledge retention 
+                compared to traditional study methods.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section id ="contact">
+        <footer>
+          <div class="back-to-top">
+            <a href="#top">BACK TO TOP</a>
+          </div>
+
+          <div class="footer-contact">
+            <div class="footer-email">
+              <a href="mailto:afridshaik2002@gmail.com">📧 afridshaik2002@gmail.com</a>
+            </div>
+          
+            <div class="footer-resume">
+              <a href="resume.pdf" download>⬇️ Download Resume</a>
+            </div>
+          </div>
+        
+          <div class="footer-icons">
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" viewBox="0 0 24 24">
+                <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm4.5 3.5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2A3 3 0 1 0 15 12a3 3 0 0 0-3-3zm5.75-2a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17.75 7z"/>
+              </svg>
+            </a>
+            <a href="https://github.com" target="_blank" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" viewBox="0 0 24 24">
+                <path d="M12 .3C5.4.3 0 5.7 0 12.3c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.3 1.2a11.3 11.3 0 013 0c2.2-1.5 3.3-1.2 3.3-1.2.6 1.7.2 3 .1 3.3.8.9 1.2 2 1.2 3.2 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2v3c0 .3.2.7.8.6C20.6 22 24 17.6 24 12.3 24 5.7 18.6.3 12 .3z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" viewBox="0 0 24 24">
+                <path d="M19 0h-14C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.7 0 5-2.2 5-5V5c0-2.8-2.3-5-5-5zM7 20H4V9h3v11zM5.5 7.6c-1 0-1.7-.8-1.7-1.7S4.6 4.2 5.6 4.2c1 0 1.7.8 1.7 1.7s-.8 1.7-1.8 1.7zM20 20h-3v-5.5c0-1.3 0-3-1.9-3-1.9 0-2.1 1.4-2.1 2.9V20h-3V9h3v1.5c.4-.6 1.3-1.5 3.1-1.5 3.3 0 3.9 2.1 3.9 4.8V20z"/>
+              </svg>
+            </a>
+          </div>
+        
+          <div class="footer-copy">
+            © 2025 Afrid Shaik. All rights reserved.
+          </div>
+        </footer>
+      </section> 
+
+
+
+
+
+  </div>
+  <script>
+    const btn = document.getElementById('hamburger');
+    const nav = document.getElementById('site-nav');
+    const mq = window.matchMedia('(max-width: 500px)');
+  
+    function closeMenu(){
+      btn.classList.remove('is-open');
+      nav.classList.remove('active');
+      btn.setAttribute('aria-expanded','false');
+    }
+  
+ 
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('active');
+      btn.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  
+  
+    nav.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A' && mq.matches) closeMenu();
+    });
+  
+    mq.addEventListener('change', (e) => { if (!e.matches) closeMenu(); });
+  </script>
+</body>
+
+
 </html>
-
-

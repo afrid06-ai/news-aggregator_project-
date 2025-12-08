@@ -4,7 +4,7 @@
   "description": "Vue.js frontend for Final Project",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "mv public/index.html public/index.html.bak 2>/dev/null || true && vue-cli-service build && mv dist/index.html dist/news.html && mv public/index.html.bak public/index.html && cp public/index.html dist/index.html && cp public/styles.css dist/styles.css 2>/dev/null || true"
   },
   "dependencies": {
     "core-js": "^3.32.2",
